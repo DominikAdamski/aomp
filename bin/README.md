@@ -89,6 +89,7 @@ To build and clone all components using the latest development sources, first cl
    cd aomp
    git checkout aomp-dev
    git pull
+   cd bin
    ./clone_aomp.sh
 ```
 The first time you run ./clone_aomp.sh, it could take a long time to clone the repositories.
@@ -100,6 +101,7 @@ So please run "git pull" frequently to stay current with the aomp development te
 ```
 cd $HOME/git/aomp14.0/aomp
 git pull
+cd bin
 ./clone_aomp.sh
 ```
 AOMP_EXTERNAL_MANIFEST=1 can be used to ensure clone_aomp.sh does not use an internal manifest. This is only useful of the internal ping succeeds, otherwise the external manifest us used by default.
